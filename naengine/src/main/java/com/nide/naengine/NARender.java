@@ -6,10 +6,10 @@ import android.opengl.GLSurfaceView;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
-public class NAEngine implements GLSurfaceView.Renderer  {
+public class NARender implements GLSurfaceView.Renderer  {
     private long engine_ptr_;
 
-    public NAEngine() {
+    public NARender() {
         System.loadLibrary("naenginelib");
         engine_ptr_ = createNAEngine(4);
     }

@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var renderer = NativeRenderer()
-        var engine = NAEngine()
+        var engine = NARender()
 
         // Example of a call to a native method
         sample_text.text = renderer.name + " and " + engine.name

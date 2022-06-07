@@ -4,7 +4,7 @@ import android.opengl.GLSurfaceView;
 import android.content.Context;
 
 public class NAGLSurfaceView extends GLSurfaceView {
-    private final NAEngine engine;
+    private final NARender render;
 
     public NAGLSurfaceView(Context context){
         super(context);
@@ -12,10 +12,10 @@ public class NAGLSurfaceView extends GLSurfaceView {
         // Create an OpenGL ES 2.0 context
         setEGLContextClientVersion(2);
 
-        engine = new NAEngine();
+        render = new NARender();
 
         // Set the Renderer for drawing on the GLSurfaceView
-        setRenderer(engine);
+        setRenderer(render);
     }
 
 }
